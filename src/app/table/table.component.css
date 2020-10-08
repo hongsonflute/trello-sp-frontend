@@ -1,0 +1,24 @@
+.table-custom{
+  width: 200px;
+  background-color: gray;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-table;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.create-new{
+  color: black;
+  background-color: white;
+  border: solid 1px gray;
+}
+.icon-new{
+  display: block;
+}
+.create-new:hover .icon-new{
+  font-size: 30px;
+}

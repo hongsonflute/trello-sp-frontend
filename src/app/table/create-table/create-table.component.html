@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <h4 class="modal-title">Thêm mới một bảng</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <label for="name-table" class="font-weight-bold">Tên table</label> <br>
+  <input type="text" id="name-table" placeholder="Nhập tên table" class="form-control" [(ngModel)]="table.name">
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark btn-primary" (click)="saveTable()">Save</button>
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>

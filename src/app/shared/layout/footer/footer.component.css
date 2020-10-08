@@ -1,0 +1,10 @@
+.footer-custom{
+  /*position: fixed;*/
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 5px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  background: #C3B2D3;
+}

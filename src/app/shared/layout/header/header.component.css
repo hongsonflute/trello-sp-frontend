@@ -1,0 +1,53 @@
+.avatar{
+  margin: 0px 20px;
+  background-color: aqua;
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.user-setting{
+  position: relative;
+}
+.setting-panel{
+  padding: 10px;
+  width: 212px;
+  height: auto;
+  border: solid 1px green;
+  position: absolute;
+  right: 1px;
+  top: 50px;
+  background-color: #FFF;
+  z-index: 1;
+  border-radius: 5px;
+}
+.setting-panel-header{
+  border-bottom: solid 1px;
+  text-align: center;
+}
+.info-base{
+  text-align: center;
+  border-bottom: solid 1px gray;
+  padding: 5px;
+}
+.items-setting{
+  list-style-type: none;
+  padding: 5px;
+}
+.items-setting a{
+  text-decoration: none;
+  width: 100%;
+}
+.user-notify{
+  cursor: pointer;
+  background-color: #00c2e0;
+  color: #FFF;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 40px;
+}

@@ -1,0 +1,13 @@
+.home-background {
+  background-image: url('https://cmcsoft.com/image/data/hrm2.png');
+ background-repeat: repeat-x;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-welcome{
+  display: inline-block;
+}

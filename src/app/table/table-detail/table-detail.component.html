@@ -1,0 +1,56 @@
+<div class="board-wrapper mt-2" style="    margin-bottom: 100px;">
+  <div class="board-header">
+    <p>{{tableNow.name}}</p>
+  </div>
+  <div class="board-body">
+  <div class="board-container" *ngFor="let task of taskListArr">
+    <div class="task-list">
+      <div class="task-list-header">
+        <span>{{task.name}}</span>
+        <span class="index-of-task-list">{{task.index}}</span>
+      </div>
+      <div class="task-list-body">
+        <div class="task-label">
+          <span>task 1 </span>
+        </div>
+        <div class="task-label">
+          <span>task 1</span>
+        </div>
+        <div class="task-label">
+          <span>task 1</span>
+        </div>
+      </div>
+      <div class="mb-2" *ngIf="task.id===idTaskListAddNew; else btnAdd">
+        <textarea placeholder="Nhập tiêu đề cho thẻ" class="new-label" style=""></textarea> <br>
+        <button class="btn btn-info btn-sm mr-4">Thêm thẻ</button>
+        <span (click)="closeAddTask()" class="close-btn">X</span>
+      </div>
+      <ng-template #btnAdd>
+        <div class="task-label" (click)="openAddTaskToList(task.id)">
+          Thêm task mới
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+  </div>
+  <!--  add new task list -->
+  <div class="board-container" *ngIf="openNewTaskList; else btnAddTaskList">
+    <div class="mb-2" >
+      <textarea placeholder="Nhập tiêu đề cho thẻ" class="new-label" style="" [(ngModel)]="taskList.name"></textarea> <br>
+      <button class="btn btn-info btn-sm mr-2" (click)="addNewTaskList()">Thêm task list</button>
+      <div class="close-btn" (click)="openNewTaskList=!openNewTaskList">X</div>
+    </div>
+  </div>
+  <ng-template #btnAddTaskList>
+  <div class="board-container" (click)="openNewTaskList=!openNewTaskList">
+      <div class="task-list"  >
+        <div class="task-list-header">
+          <span>+ Thêm danh sách khác</span>
+        </div>
+      </div>
+  </div>
+  </ng-template>
+
+</div>
+

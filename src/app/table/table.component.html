@@ -1,0 +1,8 @@
+<h4>Danh sách các bảng của bạn!</h4>
+<div  *ngFor="let t of listTable" class="table-custom" [routerLink]="t.id">
+  <span>{{t.name}}</span>
+</div>
+<div class="table-custom create-new" (click)="openCreateNewTable()">
+  <span>Tạo Bảng Mới</span>
+  <i class="icon-new">+</i>
+</div>
